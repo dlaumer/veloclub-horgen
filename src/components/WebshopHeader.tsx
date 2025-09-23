@@ -12,14 +12,14 @@ interface WebshopHeaderProps {
 
 const WebshopHeader = ({ cartItems, onUpdateQuantity, onRemoveItem, onCheckout }: WebshopHeaderProps) => {
   return (
-    <header className="bg-gradient-hero text-white shadow-elevated sticky top-0 z-50">
+    <header className="bg-white border-b border-border shadow-card sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Bike className="h-8 w-8" />
+            <Bike className="h-8 w-8 text-primary" />
             <div>
-              <h1 className="text-2xl font-bold">Swiss Bike Club</h1>
-              <div className="flex items-center gap-1 text-sm opacity-90">
+              <h1 className="text-2xl font-bold text-primary">Swiss Bike Club</h1>
+              <div className="flex items-center gap-1 text-sm text-muted-foreground">
                 <MapPin className="h-3 w-3" />
                 <span>Zürich, Switzerland</span>
               </div>
@@ -29,7 +29,7 @@ const WebshopHeader = ({ cartItems, onUpdateQuantity, onRemoveItem, onCheckout }
           <div className="flex items-center gap-4">
             <Button
               variant="ghost"
-              className="text-white hover:bg-white/10 transition-colors"
+              className="text-foreground hover:bg-muted transition-colors"
             >
               About Club
             </Button>
