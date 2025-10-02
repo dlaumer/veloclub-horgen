@@ -64,10 +64,14 @@ export default {
         },
       },
       backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-alpine": "var(--gradient-alpine)",
       },
       boxShadow: {
         "card": "var(--shadow-card)",
         "elevated": "var(--shadow-elevated)",
+        "glow": "var(--shadow-glow)",
       },
       transitionTimingFunction: {
         "smooth": "var(--transition-smooth)",

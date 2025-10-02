@@ -32,7 +32,7 @@ const ShoppingCart = ({ items, onUpdateQuantity, onRemoveItem, onCheckout }: Sho
         </Button>
       </SheetTrigger>
       
-      <SheetContent className="w-full sm:max-w-lg bg-background">
+      <SheetContent className="w-full sm:max-w-lg bg-gradient-alpine">
         <SheetHeader>
           <SheetTitle className="flex items-center gap-2">
             <CartIcon className="h-5 w-5" />
@@ -123,7 +123,7 @@ const ShoppingCart = ({ items, onUpdateQuantity, onRemoveItem, onCheckout }: Sho
                     onCheckout();
                     setIsOpen(false);
                   }}
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
+                  className="w-full bg-gradient-hero hover:shadow-glow transition-all duration-300"
                   size="lg"
                 >
                   Checkout with TWINT

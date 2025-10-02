@@ -27,8 +27,8 @@ const CategoryFilter = ({ selectedCategory, onCategoryChange, productCounts }: C
           onClick={() => onCategoryChange(key)}
           className={`relative transition-all duration-300 ${
             selectedCategory === key
-              ? "bg-primary text-primary-foreground shadow-elevated"
-              : "hover:shadow-card hover:bg-muted"
+              ? "bg-gradient-hero shadow-glow"
+              : "hover:shadow-card"
           }`}
         >
           {label}

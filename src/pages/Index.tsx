@@ -96,13 +96,31 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-alpine">
       <WebshopHeader
         cartItems={cartItems}
         onUpdateQuantity={handleUpdateQuantity}
         onRemoveItem={handleRemoveItem}
         onCheckout={handleCheckout}
       />
+
+      {/* Hero Section */}
+      <section className="relative h-96 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40" />
+        </div>
+        <div className="relative z-10 h-full flex items-center justify-center text-center text-white">
+          <div>
+            <h2 className="text-5xl font-bold mb-4">Ride in Style</h2>
+            <p className="text-xl opacity-90">
+              Premium cycling apparel for the Swiss Alps
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Main Shop Content */}
       <main className="container mx-auto px-4 py-12">
